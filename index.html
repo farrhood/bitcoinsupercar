@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Ether to Lamborghini Converter | Hypecoaster.com</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://hypecoaster.com/css/styles.css?6" >
+
+</head>
+<body>
+<div id="appwrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 no-padding text-center black-bg">
+                <img class="img-fluid" src="http://hypecoaster.com/images/hypecoaster_logo3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 no-padding text-center black-bg">
+               <h1 class="green">HYPECOASTER.COM</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-10">
+                <h1 class="text-center">1 ETH = <span v-text="ethlamboPrice"></span> LAMBO</h1>
+                <p class="text-center lambo-price">Lamborghini Aventador ca. <span v-text="lamboPrice"></span> ETH</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mt-3 text-center black-bg">
+                <h3><a data-toggle="collapse" href="#collapseCalc" aria-expanded="false" aria-controls="collapseCalc">
+                        -> SHOW CALCULATOR <-
+                    </a></h3>
+                <div class="collapse" id="collapseCalc">
+                    <div class="card card-block">
+                        <form>
+                            <div class="form-group text-center">
+                                <label for="amountEth" v-text="ethLamboCalc">Amount ETH</label>
+                                <input v-model="enteredEth" class="form-control" id="amountEth" type="number" min="0">
+                                <small id="emailHelp" class="form-text text-muted">Just enter any amount of Ether to see how many Lambos you can buy for that.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <img class="img-fluid" src="http://hypecoaster.com/images/reddit_img.png" title="Image by IRefuseToGiveAName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <span>Greetings to <a href="https://www.reddit.com/r/EthTrader" target="_blank">/r/EthTrader</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="http://hypecoaster.com/js/script.js?6"></script>
+</body>
+</html>
